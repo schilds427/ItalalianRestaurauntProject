@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="MyCss.css">
+<meta charset="utf-8">
+<title>Carolina Restaurant : Contact Us</title>
+</head>
+<body>
+	<div class="wrapper">
+	<header>
+		<h1>Contact Us</h1>
+	<nav>
+		<p>
+			<a href="Index.html">Home</a>&nbsp;
+			<a href="Menu.html">Menu</a>&nbsp;
+			<a href="Contact.html">Contact Us</a>&nbsp;
+			<a href="Hours.html">Hours of Operation</a>&nbsp;
+			<a href="Job.html">Jobs</a>&nbsp;
+            <a href="About.html">About Us</a>&nbsp;
+		</p>
+	</nav>
+	</header>
+	<main>
+			<form method="post" class="mainForm">
+				<label>Your First Name: </label><input type="text" name="FName" size="20" class="textBoxes">
+					<br>
+				<label>Your Last Name: </label><input type ="text" name="LName" size="20" class="textBoxes">
+					<br>
+				<label>Your email: </label><input type="text" name="EMail" size="30" class="textBoxes">
+					<br>
+					<label>How often do you visit the restaurant?</label><br>
+						<input type="radio" name="frequencey" checked>0-1 Times per month
+						<input type="radio" name="frequencey">2-3 Times per month<br>
+						<input type="radio" name="frequencey">4-5 Times per month
+						<input type="radio" name="frequencey">6+ Times per month<br>
+				<label>Any Comments:</label><br>
+					<textarea rows="10" cols="30"></textarea><br>
+				<input type="submit">&nbsp;
+				<input type="reset" value="Clear">
+			</form>
+			<form class="mainForm" method="post">
+			<fieldset>
+				<legend>Reservation</legend>
+				<input type="button" onclick="Reservation();" value="Make a reservation today!">
+			</fieldset>
+			<script>
+				function Reservation()
+				{
+				var custName = prompt("Please enter your name");
+				var phoneNumber = prompt("Please enter your phone number");
+				var theDate = prompt("Please enter the day you want to make a reservation for in MM/DD/YYYY format");
+				alert("thank you " + custName + " for making a reservation on: " + theDate + " we will call you later to confirm the details.");
+				}
+			</script>
+		</form>
+		
+	</main>
+	<footer>
+		<p class="footerInfo">
+			Want to become a part of the Carolina Restaurant family?
+			You must be hard working and driven by a passion to bring
+			the best eating experience possible to as many people as
+			you can. if you think you have what it takes click
+			<a href="Job.html" target="_blank">Here</a><br><br>
+			
+			<b>Phone Number:</b> 555-5555<br>
+			<b>E-mail:</b> CarolinaRestaurant@somewebsite.com<br>
+			<b>Address:</b> 123 Some street, Lexington, SC 29072
+		</p>
+	</footer>
+	</div>
+</body>
+</html>

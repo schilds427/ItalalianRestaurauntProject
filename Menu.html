@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="MyCss.css">
+<meta charset="utf-8">
+<title>Carolina Restaurant : Menu</title>
+</head>
+<body>
+	<div class="wrapper">
+	<header>
+		<h1>Menu</h1>
+	<nav>
+		<p>
+			<a href="Index.html">Home</a>&nbsp;
+			<a href="Menu.html">Menu</a>&nbsp;
+			<a href="Contact.html">Contact Us</a>&nbsp;
+			<a href="Hours.html">Hours of Operation</a>&nbsp;
+			<a href="Job.html">Jobs</a>&nbsp;
+            <a href="About.html">About Us</a>&nbsp;
+		</p>
+	</nav>
+	</header>
+	<main>
+		<div id="dishContent">
+			<img src="#" alt="image of a specific dish" id="menuImage">
+			<p id="dishDescription"></p>
+			<script>
+				var elem = document.getElementById("dishContent");
+				function ChangeContent(thePath) {
+					elem.style.display = "block";
+					document.getElementById("menuImage").src='./images/menuImages/' + thePath + '.jpg';
+					//document.write(document.getElementById("image").src='.\\images\\' + thePath + '.jpg');
+					//"G:\Textbooks\cpt-226\This is the final update\Images\Lasagna.jpg"
+					switch(thePath) {
+						//The descriptions in here aren't meant to be serious.
+						case 'Pizza':
+						document.getElementById("dishDescription").innerHTML = 'Pizza';
+						break;
+						case 'Calamari':
+						document.getElementById("dishDescription").innerHTML = "Calamari";
+						break;
+						case 'Lasagna':
+						document.getElementById("dishDescription").innerHTML = "Lasgna";
+						break;
+						case 'Fried Mozzarella':
+						document.getElementById("dishDescription").innerHTML = "Fried Mozzerela";
+						break;
+						case 'Tortellini':
+						document.getElementById("dishDescription").innerHTML = "Tortellini";
+						break;
+						case 'Chicken Wings':
+						document.getElementById("dishDescription").innerHTML = "Chicken Wings";
+						break;
+						case 'Spaghetti':
+						document.getElementById("dishDescription").innerHTML = "Spaghetti";
+						break;
+						case 'Italian sampler':
+						document.getElementById("dishDescription").innerHTML = "Italian Sampler" ;
+						break;
+						case 'Minestrone':
+						document.getElementById("dishDescription").innerHTML = "Minestrome";
+						break;
+						case 'Breadsticks':
+						document.getElementById("dishDescription").innerHTML = "Breadsticks";
+						break;
+						case 'Coke':
+						document.getElementById("dishDescription").innerHTML = "Coke";
+						break;
+						case 'Grilled Chicken Salad':
+						document.getElementById("dishDescription").innerHTML = "Grilled Chicken Salad";
+						break;
+						case 'Diet Coke':
+						document.getElementById("dishDescription").innerHTML = "Diet Coke";
+						break;
+						case 'Italian Garden Salad':
+						document.getElementById("dishDescription").innerHTML = "Italian Garden Salad";
+						break;
+						case 'Lemonade':
+						document.getElementById("dishDescription").innerHTML = "Lemonade";
+						break;
+						case 'Italian Sausage and Pasta Soup':
+						document.getElementById("dishDescription").innerHTML = "Italian Sausage and Pasta Soup";
+						break;
+						case 'Sprite':
+						document.getElementById("dishDescription").innerHTML = "Sprite";
+						break;
+						case 'Iced Tea':
+						document.getElementById("dishDescription").innerHTML = "Iced Tea";
+						break;
+					}
+					
+				}
+			</script>
+		</div>
+			<table>
+				<tr>
+					<th colspan="4" style="border-bottom:none;">Menu</th>
+				</tr>
+				<tr>
+					<th colspan="4" style="border-top:none;">click to see the dish</th>
+				</tr>
+				<tr>
+					<th>Main dish</th>
+					<th>Prices</th>
+					<th>Appetizers</th>
+					<th>Prices</th>
+				</tr>
+				<tr>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML)">Pizza</td>
+					<td>$8.50</td>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Calamari</td>
+					<td>4.79</td>
+				</tr>
+				<tr>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Lasagna</td>
+					<td>$6.75</td>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Fried Mozzarella</td>
+					<td>4.50</td>
+				</tr>
+				<tr>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Tortellini</td>
+					<td>$5.00</td>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Chicken Wings</td>
+					<td>5.00</td>
+				</tr>
+				<tr>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Spaghetti</td>
+					<td>$4.50</td>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Italian sampler</td>
+					<td>5.99</td>
+				</tr>
+				<tr>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Minestrone</td>
+					<td>$3.99</td>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Breadsticks</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<th>Beverages</th>
+					<th>Prices</th>
+					<th>Salads/Soup</th>
+					<th>Prices</th>
+				</tr>
+				<tr>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Coke</td>
+					<td>1.29</td>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Grilled Chicken Salad</td>
+					<td>3.99</td>
+				</tr>
+				<tr>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Diet Coke</td>
+					<td>1.29</td>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Italian Garden Salad</td>
+					<td>3.99</td>
+				</tr>
+				<tr>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Lemonade</td>
+					<td>1.29</td>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Italian Sausage and Pasta Soup</td>
+					<td>4.99</td>
+				</tr>
+				<tr>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Sprite</td>
+					<td>1.29</td>
+					<td colspan="2"></td>
+				</tr>
+				<tr>
+					<td class="dishNames" onclick="ChangeContent(this.innerHTML);">Iced Tea</td>
+					<td>1.29</td>
+					<td colspan="2"></td>
+				</tr>
+
+			</table>
+	</main>
+	</div>
+</body>
+</html>

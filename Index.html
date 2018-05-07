@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="MyCss.css">
+<meta charset="utf-8">
+<title>Carolina Restaurant</title>
+</head>
+	<body>
+	<div class="wrapper">
+	<header>
+	<h1>Carolina Restaurant</h1>
+	<div id="navigation">
+	<nav>
+		<p>
+			<a href="Index.html">Home</a>&nbsp;
+			<a href="Menu.html">Menu</a>&nbsp;
+			<a href="Contact.html">Contact Us</a>&nbsp;
+			<a href="Hours.html">Hours of Operation</a>&nbsp;
+			<a href="Job.html">Jobs</a>&nbsp;
+            <a href="About.html">About Us</a>&nbsp;
+		</p>
+	</nav>
+	</div>
+	</header>
+	<main>
+		<div id="indexImages">
+			<img src="./Images/IndexImages/bar.jpg" class="slideshow" alt="an image of a bar">
+			<img src="./Images/IndexImages/food.jpg" class="slideshow" alt="an image of food on a table">
+			<img src="./Images/IndexImages/kitchen.jpg" class="slideshow" alt="an image of a kitchen">
+			<img src="./Images/IndexImages/wineGlasses.jpg" class="slideshow" alt="an image of wine glasses">
+			<script type="text/javascript">
+				var index = 0;
+				carousel();
+				
+				function carousel()
+				{
+					var i;
+					var x = document.getElementsByClassName("slideshow");
+					for (i = 0; i < x.length; i++)
+					{
+						x[i].style.display = "none";
+					}
+					index++;
+					if(index > x.length) {index = 1}
+					x[index-1].style.display = "block";
+					setTimeout(carousel, 8000);
+				}
+			</script>
+		</div>
+		<h3 class="indexDescription">Hello and welcome to Carolina Restaurant!</h3>
+		<p class="indexDescription">
+			Are you looking for truly authentic Italian food to sate your cravings?
+			If so then look no farther than our store front that boasts a
+			Baroque period architecture. Not only have we taken care to
+			capture traditional Italian asthetics, but we also make a great effort
+			to accurately express traditional style Italian cuisine.
+		</p>
+	</main>
+	</div>
+</body>
+</html>
